@@ -1,2 +1,6 @@
 # Install Flask
 Flask
+
+# Web scraping
+bs4
+requests

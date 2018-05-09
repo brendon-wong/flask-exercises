@@ -28,3 +28,7 @@ Create a small application which grabs headlines from Google News by keyword. (T
     3. Filter out articles whose headlines do not match the keyword passed in from the query string;
     4. Render an HTML page with matching articles (links and headlines) in a list.
 
+### Brendon's Notes
+- Note that for the refactored calculator application, the tests require a select form field with the name `calculation` otherwise they will not pass
+- Part 3 of the exercises involves a web scraping tool from another Rithm course; in the interest of time, part 3 can be skipped without affecting learning progress
+- The official course solution for web scraping does not appear to work
