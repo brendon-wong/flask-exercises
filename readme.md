@@ -2,7 +2,7 @@
 
 This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson text has been archived here without modification.
 
-To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes on each section in the each lesson's readme section under "Brendon's Notes" which provide suggestions and explanations both for before and after an exercise depending on the section. Each lesson has tests in the test.py module. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solution can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
+To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes on each section in the each lesson's readme section under "Brendon's Notes" which provide suggestions and explanations both for before and after an exercise depending on the section. Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solution can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
 
 ### Setup
 1. `git clone` this repository

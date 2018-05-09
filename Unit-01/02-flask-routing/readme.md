@@ -6,4 +6,5 @@ Build a simple calculator! You should have routes that can perform addition, sub
 
 Refactor your code so that all of these operations can be done in a single route called `/math`
 
-
+### Brendon's Notes
+- The lesson uses f-strings, newly introduced in Python 3.6, instead of the `.format()` method to substitute variables into strings

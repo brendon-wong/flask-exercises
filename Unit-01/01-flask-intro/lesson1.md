@@ -146,3 +146,9 @@ Once these are set, you can type `flask run`, and as long as you've got a file c
 Unfortunately, if you close your terminal window, you'll lose those variables. The next time you open up terminal, you'll have to type those `export` statements again. If you want to set them once and forget about them, you can also put those two lines inside of your `.bashrc`, or, if you're using [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh), inside of your `.zshrc`.
 
 As a reminder, to open up your `.zshrc`, you can type `code ~/.zshrc`, and add the two export lines above to the bottom of the file. After saving, to restart your terminal, you can then type `source ~/.zshrc`. After that, you can always type `flask run` to start your Flask server in debug mode! (If you're using `bash`, you can replace references to `.zhsrc` with `.bashrc`.)
+
+### Exercise
+
+Complete the [Flask Basics](https://github.com/rithmschool/python_curriculum_exercises/tree/master/Unit-01/01-flask-intro) exercise.
+
+When you're ready, move on to [Routing with Flask](/courses/flask-fundamentals/routing-with-flask)
