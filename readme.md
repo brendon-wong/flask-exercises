@@ -4,15 +4,17 @@ This repository contains Flask instructional lessons, exercises, and exercise so
 
 To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes on each section in the each lesson's readme section under "Brendon's Notes" which provide suggestions and explanations both for before and after an exercise depending on the section. Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solution can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
 
+The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and will likely be forward compatible with future releases.
+
 ### Setup
 1. `git clone` this repository
-2. `python3 -m venv venv` to create a new virtual environment
+2. `python3 -m venv venv` to create a new virtual environment in the root directory of the cloned folder
 3. `. venv/bin/activate` to enter the virtual environment (`deactivate` to exit)
 4. `pip install -r requirements.txt` to install/update all requirements`
 
 ### Start Exercises
 1. `. venv/bin/activate` if the virtual environment is not activated
-2. Complete an exercise, referring to the lesson (and solution.py if absolutely necessary) when stuck
+2. Complete an exercise, referring to the lesson content, tests, and, if necessary, solution.py
 3. `python3 test.py` to run tests of your solution in app.py; for more test details, use the command `python3 test.py -v`
 4. To test solution.py, first change the import statement at the top of test.py from `from app import app` to `from solution import app`, then run `python3 solution.py`
 5. Refer to the solution to see alternative ways of solving the same problem and improve your coding skills
