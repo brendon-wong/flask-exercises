@@ -4,3 +4,6 @@ Flask
 # Web scraping
 bs4
 requests
+
+# HTTP methods
+flask-modus

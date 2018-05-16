@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 # Create instance of Flask class, set custom template folder
 app = Flask(__name__, template_folder="solution_templates")
 
+# Part 1
 
 @app.route('/person/<name>/<age>')
 def person(name, age):
@@ -20,6 +21,7 @@ def person(name, age):
 def calculate():
     return render_template("calc.html")
 
+# Part 2
 
 @app.route('/math')
 def math():
@@ -41,6 +43,7 @@ def math():
         return "Error processing request"
     return result
 
+# Part 3
 
 @app.route('/')
 def home():

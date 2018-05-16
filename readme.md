@@ -2,7 +2,7 @@
 
 This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson text has been archived here without modification.
 
-To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes on each section in the each lesson's readme section under "Brendon's Notes" which provide suggestions and explanations both for before and after an exercise depending on the section. Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solution can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
+To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes for each section in each lesson's readme section under "Brendon's Notes." Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
 
 The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and will likely be forward compatible with future releases.
 
@@ -16,7 +16,7 @@ The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and
 1. `. venv/bin/activate` if the virtual environment is not activated
 2. Complete an exercise, referring to the lesson content, tests, and, if necessary, solution.py
 3. `python3 test.py` to run tests of your solution in app.py; for more test details, use the command `python3 test.py -v`
-4. To test solution.py, first change the import statement at the top of test.py from `from app import app` to `from solution import app`, then run `python3 solution.py`
+4. To test solution.py, change the import statement at the top of test.py from `from app import app` to `from solution import app` and make additional import changes as needed, then run `python3 solution.py`
 5. Refer to the solution to see alternative ways of solving the same problem and improve your coding skills
 
 ### Unit 1 - Flask Fundamentals and Relational Databases
@@ -31,7 +31,7 @@ The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and
 - [08 Testing With Flask](./Unit-01/08-testing/readme.md)
 - [09 Server Side Validation with WTForms](./Unit-01/09-forms/readme.md)
 
-### Unit 2 - Flask in Production
+### Unit 2 - Flask and Users
 
 - [01 Structuring Larger Flask Applications](./Unit-02/01-blueprints/readme.md)
 - [02 Many to Many](./Unit-02/02-many-to-many/readme.md)
