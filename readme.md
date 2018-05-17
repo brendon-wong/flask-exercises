@@ -10,14 +10,21 @@ The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and
 1. `git clone` this repository
 2. `python3 -m venv venv` to create a new virtual environment in the root directory of the cloned folder
 3. `. venv/bin/activate` to enter the virtual environment (`deactivate` to exit)
-4. `pip install -r requirements.txt` to install/update all requirements`
+4. `pip install -r requirements.txt` to install/update all requirements
 
 ### Start Exercises
 1. `. venv/bin/activate` if the virtual environment is not activated
 2. Complete an exercise, referring to the lesson content, tests, and, if necessary, solution.py
-3. `python3 test.py` to run tests of your solution in app.py; for more test details, use the command `python3 test.py -v`
-4. To test solution.py, change the import statement at the top of test.py from `from app import app` to `from solution import app` and make additional import changes as needed, then run `python3 solution.py`
+3. `python3 test.py` to run tests of your solution in app.py; to see more details about the tests, use the command `python3 test.py -v`
+4. To test solution.py, change the import statement at the top of test.py from `from app import app` to `from solution import app`, make additional import changes if needed, then run `python3 solution.py`
 5. Refer to the solution to see alternative ways of solving the same problem and improve your coding skills
+
+### Postgres
+- Install [Homebrew](https://brew.sh) if Homebrew is not already installed
+- `brew install postgres` to install Postgres
+- `brew services start postgresql` to start Postgres
+- `brew services stop postgresql` to stop Postgres
+- `psql database name` to connect to a database
 
 ### Unit 1 - Flask Fundamentals and Relational Databases
 
