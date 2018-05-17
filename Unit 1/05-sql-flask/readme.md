@@ -14,3 +14,5 @@ Your application should:
 - allow a user to edit a snack
 - allow a user to delete a snack
 
+### Brendon's Notes
+-
