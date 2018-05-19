@@ -1,10 +1,13 @@
 # Flask Exercises: Work in Progress
 
-This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson text has been archived here without modification aside from minor error corrections.
+This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson material has been archived here without modification aside from minor error corrections.
 
-To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes for each section in each lesson's readme section under "Brendon's Notes." Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
+To use this repository, you can look at the lessons on Rithm's website or use the lesson material in each lesson folder. I have included notes for each section in each lesson's readme section under "Brendon's Notes." My solutions to each exercise, which pass all tests, are in solution.py or solution.md depending on the section, and Rithm's solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions). For the Flask sections of the exercises, write your solution in app.py. There are tests in the test.py module which you can refer to while developing to see what the exercise expects.
 
-The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and will likely be forward compatible with future releases.
+The solutions were created with Flask version 1.0.2, Python version 3.6.5, and PostgreSQL version 10.3 and will likely be forward compatible with future releases.
+
+The following setup instructions are for MacOS. For other operating systems see the Flask documentation on
+[Installation](http://flask.pocoo.org/docs/latest/installation/) and online Postgres resources which provide setup information for other operating systems.
 
 ### Setup
 1. `git clone` this repository
