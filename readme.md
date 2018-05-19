@@ -22,7 +22,7 @@ The following setup instructions are for MacOS. For other operating systems see 
 4. To test solution.py, change the import statement at the top of test.py from `from app import app` to `from solution import app`, make additional import changes if needed, then run `python3 solution.py`
 5. Refer to the solution to see alternative ways of solving the same problem and improve your coding skills
 
-### Postgres
+### Postgres Setup
 - Install [Homebrew](https://brew.sh) if Homebrew is not already installed
 - `brew install postgres` to install Postgres
 - `brew services start postgresql` to start Postgres
@@ -48,3 +48,7 @@ The following setup instructions are for MacOS. For other operating systems see 
 - [03 Hashing and Sessions](./Unit-02/03-hashing-sessions/readme.md)
 - [04 Authentication with Flask Login](./Unit-02/04-flask-login/readme.md)
 - [05 OAuth with Flask](./Unit-02/05-oauth/readme.md)
+
+### Tools that helped create Flask Exercises
+- HTML to Markdown converter: https://domchristie.github.io/turndown/
+- HTML tables to Markdown tables converter: https://stevecat.net/table-magic

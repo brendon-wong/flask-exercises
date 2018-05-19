@@ -7,3 +7,9 @@ requests
 
 # HTTP methods
 flask-modus
+
+# Database
+psycopg2
+
+# Testing
+flask-testing
