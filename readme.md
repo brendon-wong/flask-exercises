@@ -1,6 +1,6 @@
 # Flask Exercises: Work in Progress
 
-This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson text has been archived here without modification.
+This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson text has been archived here without modification aside from minor error corrections.
 
 To use this repository, you can look at a lesson on Rithm's website or use the archived lesson text in each lesson folder. Complete the lesson's associated exercises in app.py. I have included notes for each section in each lesson's readme section under "Brendon's Notes." Each lesson has tests in the test.py module which you can refer to while developing to see what the exercise expects. My solutions to each exercise, which pass all tests, are in solution.py. Rithm's official solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions).
 
@@ -24,7 +24,7 @@ The solutions were created with Flask version 1.0.2 and Python version 3.6.5 and
 - `brew install postgres` to install Postgres
 - `brew services start postgresql` to start Postgres
 - `brew services stop postgresql` to stop Postgres
-- `psql database name` to connect to a database
+- `psql database_name` to connect to a database
 
 ### Unit 1 - Flask Fundamentals and Relational Databases (note: change directory structure and links in Unit 1 and 2)
 

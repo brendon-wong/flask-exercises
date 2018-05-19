@@ -1,5 +1,10 @@
 # Solution to CRUD Exercises
 
+
+### Part 1
+
+Write the SQL commands necessary to do the following:
+
 1. Create a database called `first_assignment`
     - `create database first_assignment;`
 2. Connect to that database
@@ -30,3 +35,13 @@
     - `select * from products where price < 44;`
 13. Display only the products that have a price in between 22.50 and 99.99
     - `select * from products where price >= 22.50 and price <= 99.99;`
+  
+### Part 2 - Codewars
+
+Complete the following Codewars problems:
+
+[https://www.codewars.com/kata/sql-basics-simple-where-and-order-by/train/sql](https://www.codewars.com/kata/sql-basics-simple-where-and-order-by/train/sql)
+- `SELECT * from people WHERE age > 50 ORDER BY age DESC`
+
+[https://www.codewars.com/kata/1-find-all-active-students/train/sql](https://www.codewars.com/kata/1-find-all-active-students/train/sql)
+- `SELECT * FROM students WHERE IsActive;`
