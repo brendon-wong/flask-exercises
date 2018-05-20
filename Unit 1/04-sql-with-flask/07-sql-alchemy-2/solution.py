@@ -25,7 +25,7 @@ class User(db.Model):
     first_name = db.Column(db.String(50))
     last_name = db.Column(db.String(50))
     messages = db.relationship('Message', backref='user', lazy='dynamic')
-    
+
     def __init__(self, first_name, last_name):
         self.first_name = first_name
         self.last_name = last_name
@@ -42,14 +42,14 @@ class Message(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     content = db.Column(db.String(100))
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'))
-    
+
     def __init__(self, content, user_id):
         self.content = content
         self.user_id = user_id
 
     # Set a custom string representation of message objects
     def __repr__(self):
-        return f"User {self.user_id} wrote '{self.text}'"
+        return f"User {self.user_id} wrote '{self.content}'"
 
 
 @app.route('/', methods=["GET"])
@@ -128,7 +128,7 @@ def show_message(user_id, id):
         db.session.delete(selected_message)
         db.session.commit()
         return redirect(url_for('messages', user_id=user_id))
-    return render_template('messages/show.html', user=User.query.get(user_id), message = selected_message)
+    return render_template('messages/show.html', user=User.query.get(user_id), message=selected_message)
 
 
 @app.route('/users/<int:user_id>/messages/<int:id>/edit', methods=["GET"])
