@@ -15,13 +15,13 @@ Your application should:
 - allow a user to delete a snack
 
 ### Brendon's Notes
-- For the SQL With Flask exercise, copy paste your snack app from the FLASK CRUD section including app.py, the templates folder, the the static folder if you have one, but excluding snack.py because it will be replaced by db.py
+- For the SQL With Flask exercise, copy paste your snack app from the Flask CRUD section including app.py, the templates folder, the the static folder if you have one, but excluding snack.py because it will be replaced by db.py
 - How to run the application
     - `createdb flask-sql-snacks` and `createdb flask-sql-snacks-test` to create the primary and testing databases
     - `python3 -i db.py` to open db.py in the Python interpreter where you can execute commands
-        - You can test your database-related functions in the Python interpreter
+        - You can test the output of your CRUD functions in the Python interpreter
     - `create_table()` to create the snacks table
-    - The database and snacks database table is now set up and the application can run correctly
+    - The database and snacks database table are now set up and the application can run correctly
     - `DROP SCHEMA public CASCADE;` and `CREATE SCHEMA public;` will reset the database; in solution_db.py I created a reset_db function to run these commands to reset the database
         - Whenever the database is reset, `create_table()` needs to be run again
-- In order to pass the tests I had to make the app connect to the testing database by editing the connect function in solution_db.py
+- In order to pass the tests I had to make the app connect to the testing database by switching the database in the connect function in solution_db.py to `flask-sql-snacks-test`

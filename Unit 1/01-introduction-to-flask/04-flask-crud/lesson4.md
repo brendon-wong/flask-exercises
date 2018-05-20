@@ -495,6 +495,6 @@ Beautiful!
 
 If you'd like to see an example of building a CRUD application with a list, feel free to watch the screencast below.
 
-Screencast: https://www.youtube.com/embed/LPdWU9VF-Po
+Screencast: https://www.youtube.com/watch?v=LPdWU9VF-Po
 
 When you're ready, move on to [Flask Fundamentals Exercises](/courses/flask-fundamentals/flask-fundamentals-exercises)
