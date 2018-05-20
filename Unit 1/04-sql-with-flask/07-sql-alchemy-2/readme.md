@@ -16,3 +16,7 @@ Your application should have RESTful routing and full CRUD on the User and Messa
 - Handle 404 errors elegantly.
 - Add another column to users for an image_url. This way users can have their images show up in the application.
 - Implement a second one-to-many association in your app!
+
+### Brendon's Notes
+- Although the instructions say to have usernames and emails for users, the tests assume only a first and last name for the user
+- The tests also assume the form input names for creating and editing users are "first_name" and "last_name"

@@ -11,6 +11,8 @@ flask-modus
 # Database
 psycopg2
 flask-sqlalchemy
+flask-migrate
+flask-script
 
 # Testing
 flask-testing
