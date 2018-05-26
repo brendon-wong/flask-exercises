@@ -31,15 +31,15 @@ The following setup instructions are for MacOS. For other operating systems see 
 
 ### Unit 1 - Flask Fundamentals and Relational Databases (note: change directory structure and links in Unit 1 and 2)
 
-- [01 Introduction To Flask](./Unit-01/01-flask-intro/readme.md)
-- [02 Routing with Flask](./Unit-01/02-flask-routing/readme.md)
-- [03 Templating with Jinja2](./Unit-01/03-templating/readme.md)
-- [04 CRUD with Flask](./Unit-01/04-flask-crud/readme.md)
-- [05 SQL With Flask and Postgres](./Unit-01/05-sql-flask/readme.md)
-- [06 SQL Alchemy, Part I](./Unit-01/06-sql-alchemy-1/readme.md)
-- [07 SQL Alchemy, Part II](./Unit-01/07-sql-alchemy-2/readme.md)
-- [08 Testing With Flask](./Unit-01/08-testing/readme.md)
-- [09 Server Side Validation with WTForms](./Unit-01/09-forms/readme.md)
+- [01 Introduction To Flask](./Unit%201/01-introduction-to-flask/01-flask-intro)
+- [02 Routing with Flask](./Unit%201/01-introduction-to-flask/02-flask-routing)
+- [03 Templating with Jinja2](./Unit%201/01-introduction-to-flask/03-templating)
+- [04 CRUD with Flask](./Unit%201/01-introduction-to-flask/04-flask-crud)
+- [05 SQL With Flask and Postgres](./Unit%201/04-sql-with-flask/05-sql-flask)
+- [06 SQL Alchemy, Part I](./Unit%201/04-sql-with-flask/06-sql-alchemy-1)
+- [07 SQL Alchemy, Part II](./Unit%201/04-sql-with-flask/07-sql-alchemy-2)
+- [08 Testing With Flask](./Unit%201/05-apis-testing-forms-deployment/08-testing)
+- [09 Server Side Validation with WTForms](./Unit%201/05-apis-testing-forms-deployment/09-forms)
 
 ### Unit 2 - Flask and Users
 
