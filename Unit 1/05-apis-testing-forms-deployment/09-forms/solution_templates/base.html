@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Directory</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>User Directory</h1>
+  {% with messages = get_flashed_messages() %}
+    {% if messages %}
+      {% for message in messages %}
+        <p><i>{{ message }}</i></p>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+  
+  {% block content %}
+  {% endblock %}
+</body>
+
+</html>

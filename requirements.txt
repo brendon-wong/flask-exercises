@@ -16,3 +16,9 @@ flask-script
 
 # Testing
 flask-testing
+
+# Forms
+flask-wtf
+
+# Deployment
+gunicorn

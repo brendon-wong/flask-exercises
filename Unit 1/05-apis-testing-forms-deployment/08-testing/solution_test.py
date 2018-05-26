@@ -35,7 +35,7 @@ class BaseTestCase(TestCase):
         db.session.commit()
 
     def tearDown(self):
-        # Ensure SQLAlchemy session is properly removed and new is session started with each test
+        # Ensure SQLAlchemy session is properly removed and new session started with each test
         db.session.remove()
         db.drop_all()
 

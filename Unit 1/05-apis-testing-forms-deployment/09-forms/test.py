@@ -1,4 +1,4 @@
-from app import app,db, User, Message
+from app import app, db, User, Message
 from flask_testing import TestCase
 import unittest
 
