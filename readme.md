@@ -1,4 +1,4 @@
-# Flask Exercises: Work in Progress
+# Flask Exercises
 
 This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson material has been archived here without modification aside from minor error corrections.
 
@@ -29,7 +29,7 @@ The following setup instructions are for MacOS. For other operating systems see 
 - `brew services stop postgresql` to stop Postgres
 - `psql database_name` to connect to a database
 
-### Unit 1 - Flask Fundamentals and Relational Databases (note: change directory structure and links in Unit 1 and 2)
+### Unit 1 - Flask Fundamentals and Relational Databases (Complete)
 
 - [01 Introduction To Flask](./Unit%201/01-introduction-to-flask/01-flask-intro)
 - [02 Routing with Flask](./Unit%201/01-introduction-to-flask/02-flask-routing)
@@ -41,7 +41,7 @@ The following setup instructions are for MacOS. For other operating systems see 
 - [08 Testing With Flask](./Unit%201/05-apis-testing-forms-deployment/08-testing)
 - [09 Server Side Validation with WTForms](./Unit%201/05-apis-testing-forms-deployment/09-forms)
 
-### Unit 2 - Flask and Users
+### Unit 2 - Flask and Users (Work in progress; directory links/structure needs to be updated)
 
 - [01 Structuring Larger Flask Applications](./Unit-02/01-blueprints/readme.md)
 - [02 Many to Many](./Unit-02/02-many-to-many/readme.md)

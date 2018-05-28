@@ -32,7 +32,7 @@ class User(db.Model):
 
     # Set a custom string representation of user objects
     def __repr__(self):
-        return f"{self.first_name} {self.last_name}'s username is {self.username} and email is {self.email}"
+        return f"User {self.first_name} {self.last_name}"
 
 
 class Message(db.Model):
