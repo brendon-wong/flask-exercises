@@ -1,3 +1,5 @@
+## Authenticating a Flask API with JWTs
+
 ### Objectives:
 
 By the end of this chapter, you should be able to:

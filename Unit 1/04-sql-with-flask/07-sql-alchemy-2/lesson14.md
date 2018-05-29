@@ -1,3 +1,5 @@
+## Migrations with Flask Migrate
+
 ### Objectives:
 
 By the end of this chapter, you should be able to:
