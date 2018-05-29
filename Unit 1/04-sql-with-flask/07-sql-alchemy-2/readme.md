@@ -18,5 +18,4 @@ Your application should have RESTful routing and full CRUD on the User and Messa
 - Implement a second one-to-many association in your app!
 
 ### Brendon's Notes
-- Although the instructions say to have usernames and emails for users, the tests assume only a first and last name for the user
-- The tests also assume the form input names for creating and editing users are "first_name" and "last_name"
+- The tests assume the form input names for creating and editing users are "first_name" and "last_name" and the input name for creating and editing messages is "content"

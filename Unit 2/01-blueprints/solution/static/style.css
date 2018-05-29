@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+body::after {
+  content: "";
+  background: url(https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=7f7648f33be7bf4dc75b9d4de3d7adcd&auto=format&fit=crop&w=2100&q=80);
+  background-size: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}

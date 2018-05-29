@@ -1,6 +1,9 @@
-from project import app,db
+from project import app, db
 from project.users.models import User
 from project.messages.models import Message
+from flask_testing import TestCase
+import unittest
+
 from flask_testing import TestCase
 import unittest
 
@@ -61,6 +64,7 @@ class BaseTestCase(TestCase):
             follow_redirects=True
         )
         self.assertIn(b'updated information', response.data)
+        self.assertIn(b'User Updated!', response.data)
         self.assertNotIn(b'Elie Schoppik', response.data)
 
     def test_users_delete(self):
@@ -68,6 +72,7 @@ class BaseTestCase(TestCase):
             '/users/1?_method=DELETE',
             follow_redirects=True
         )
+        self.assertIn(b'User Deleted!', response.data)
         self.assertNotIn(b'Elie Schoppik', response.data)
 
     #### TESTS FOR MESSAGES ####
@@ -85,13 +90,19 @@ class BaseTestCase(TestCase):
     def test_messages_create(self):
         response = self.client.post(
             '/users/1/messages/',
-            data=dict(text="Hi Matt!!", user_id=3),
+            data=dict(content="Hi Matt!!"),
             follow_redirects=True
         )
         self.assertEqual(response.status_code, 200)
+        self.assertIn(b'Message Created!', response.data)
         self.assertIn(b'Hi Matt!!', response.data)
 
     def test_messages_edit(self):
+        self.client.post(
+            '/users/1/messages/',
+            data=dict(content="Hi Elie!!", user_id=1),
+            follow_redirects=True
+        )
         response = self.client.get(
             '/users/1/messages/1/edit'
         )
@@ -105,9 +116,10 @@ class BaseTestCase(TestCase):
     def test_messages_update(self):
         response = self.client.patch(
             '/users/1/messages/1?_method=PATCH',
-            data=dict(text="Welcome Back Elie!"),
+            data=dict(content="Welcome Back Elie!"),
             follow_redirects=True
         )
+        self.assertIn(b'Message Updated!', response.data)
         self.assertIn(b'Welcome Back Elie!', response.data)
 
     def test_messages_delete(self):
@@ -115,6 +127,7 @@ class BaseTestCase(TestCase):
             '/users/1/messages/1?_method=DELETE',
             follow_redirects=True
         )
+        self.assertIn(b'Message Deleted!', response.data)
         self.assertNotIn(b'Hello Elie!!', response.data)
 
 

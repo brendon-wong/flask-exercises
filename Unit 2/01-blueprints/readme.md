@@ -20,3 +20,6 @@
     - when a message is deleted, send a flash message of "Message Deleted!"
 
 3. If you have not added any styling or testing to your users and messages app, be sure to do so!
+
+### Brendon's Notes
+- It is recommended to put a blueprint's template files inside a subdirectory of the blueprint's templates folder because template files from other blueprints or the project's main templates folder can conflict if they have the same name; see [this StackOverFlow question](https://stackoverflow.com/questions/7974771/flask-blueprint-template-folder/8198325) for more information
