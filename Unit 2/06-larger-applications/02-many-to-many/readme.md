@@ -24,4 +24,5 @@ Add another resource to your users and messages application! Create a resource f
 
 ### Brendon's Notes
 - The starter code for the employee and departments app is currently not available
-- I made the solution for the employee and departments app as a one file Flask app
+- I made the solution for the employee and departments app as a one file Flask app, and the solution for the users, messages, and tags app as a structured Flask app
+- I wrote custom tests to test tagging and displaying tags in the messages and vice versa for the messaging/tags app, which is not included in Rithm's default test.py file

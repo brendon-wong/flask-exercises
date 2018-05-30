@@ -36,7 +36,10 @@ __pycache__/
 *$py.class
 
 ### Database
-.db
+*Db.*
+
+### Migrations
+migrations/
 
 # C extensions
 *.so

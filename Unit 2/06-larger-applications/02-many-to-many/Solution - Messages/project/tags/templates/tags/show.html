@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="{{ url_for('tags.tags') }}">Tag Directory</a>
+
+<h2>{{ tag.name }}</h2>
+
+<p>ID: {{ tag.id }}</p>
+
+{% endblock %}
