@@ -16,7 +16,7 @@ The two resources we will be working on are `employees` and `departments`. We wi
 
 Let's first imagine what this would look like with SQL. When you want to model a many-to-many relationship between two resources, it turns out that you need THREE tables: one table for each resource, and one to manage the links between the two. This third table is frequently called a join table, or a through table, since you have a many-to-many relationship _through_ this table. Note also that from this perspective, a many-to-many relationship is really just a pair of one-to-many relationships, where each resource is in a one-to-many relationship with the join table.
 
-In the simplest case, our join table will have columns for the foreign keys for both tables, but not much else. In our current example, let's call our join table table `employee_departments` and start with the following commands in the terminal:
+In the simplest case, our join table will have columns for the foreign keys for both tables, but not much else. In our current example, let's call our join table `employee_departments` and start with the following commands in the terminal:
 
 ~~~~
 dropdb many-many-example
@@ -307,7 +307,7 @@ class Department(db.Model):
         self.name = name
 ~~~~
 
-We simply have two models along with a join table that we are calling EmployeeDepartment which contains two id's that are foreign keys. Things get a bit more interesting if you start thinking about the forms. For instance, let's say that you want to be able to select the departments to assing to an employee when you create that employee. You might think that you need a form that looks something like this:
+We simply have two models along with a join table that we are calling EmployeeDepartment which contains two id's that are foreign keys. Things get a bit more interesting if you start thinking about the forms. For instance, let's say that you want to be able to select the departments to assign to an employee when you create that employee. You might think that you need a form that looks something like this:
 
 ~~~~
 from flask_wtf import FlaskForm

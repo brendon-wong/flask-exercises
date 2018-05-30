@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="{{ url_for('departments') }}">Department Directory</a>
+
+<h2>{{ department.name }}</h2>
+
+<p>ID: {{ department.id }}</p>
+
+{% endblock %}
