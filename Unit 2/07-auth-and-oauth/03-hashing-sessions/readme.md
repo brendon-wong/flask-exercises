@@ -11,3 +11,6 @@ Add authentication to your users and messages application! You should also have 
 `GET /messages` - shows all of the messages for every user - a user does not need to be logged in to see this content.
 
 - Make sure that users can not create, edit or delete other users AND that users can not create, edit or delete messages for other users! This will require you to write some custom decorators so you can successfully implement authorization. 
+
+### Brendon's Notes
+- 

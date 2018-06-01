@@ -32,7 +32,7 @@ But if we don't know the user's password, how can we log them in? The trick is t
 
 Another type of encryption, which we won't be using, is _two-way encryption_. With two-way encryption, both parties know a secret key that they can use to decipher messages.
 
-hen you are doing any kind of password hashing, you should use an industry established hashing algorithm. We will be using the `bcrypt` algorithm which is based off of the [Blowfish cipher](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
+When you are doing any kind of password hashing, you should use an industry established hashing algorithm. We will be using the `bcrypt` algorithm which is based off of the [Blowfish cipher](https://en.wikipedia.org/wiki/Blowfish_(cipher)).
 
 ### Hashing passwords with `bcrypt`
 

@@ -20,5 +20,10 @@ flask-testing
 # Forms
 flask-wtf
 
+# Authentication
+flask-bcrypt
+flask-login
+Flask-OAuthlib
+
 # Deployment
 gunicorn
