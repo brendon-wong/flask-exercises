@@ -37,7 +37,7 @@ __pycache__/
 *$py.class
 
 ### Database
-*db.*
+*.db
 
 ### Migrations
 migrations/
