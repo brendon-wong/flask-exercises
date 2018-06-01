@@ -1,3 +1,5 @@
+# git rm -r --cached . and git add . if files already being tracked when .gitignore edited
+
 ### Mac
 
 # General
@@ -7,7 +9,6 @@
 
 # Icon must end with two \r
 Icon
-
 
 # Thumbnails
 ._*
@@ -36,7 +37,7 @@ __pycache__/
 *$py.class
 
 ### Database
-*Db.*
+*db.*
 
 ### Migrations
 migrations/
