@@ -12,7 +12,7 @@ users_blueprint = Blueprint(
     template_folder='templates'
 )
 
-# Authorization helper code
+# Authorization and session helper code
 
 
 def login_required(fn):
@@ -25,26 +25,26 @@ def login_required(fn):
     return wrapper
 
 
+def ensure_correct_user(fn):
+    # Make sure we preserve the __name__, and __doc__ values for our decorator
+    @wraps(fn)
+    def wrapper(*args, **kwargs):
+        # In the params we have something called id, is it the same as the user logged in?
+        if kwargs.get('id') != session.get('user_id'):
+            # If not, redirect them back home
+            flash("Not Authorized")
+            return redirect(url_for('users.welcome'))
+        # Otherwise, move on with all the arguments passed in!
+        return fn(*args, **kwargs)
+    return wrapper
+
+
 @users_blueprint.before_request
 def current_user():
     if session.get('user_id'):
         g.current_user = User.query.get(session['user_id'])
     else:
         g.current_user = None
-
-
-def ensure_correct_user(fn):
-    # make sure we preserve the corrent __name__, and __doc__ values for our decorator
-    @wraps(fn)
-    def wrapper(*args, **kwargs):
-        # in the params we have something called id, is it the same as the user logged in?
-        if kwargs.get('id') != session.get('user_id'):
-            # if not, redirect them back home
-            flash("Not Authorized")
-            return redirect(url_for('users.welcome'))
-        # otherwise, move on with all the arguments passed in!
-        return fn(*args, **kwargs)
-    return wrapper
 
 
 # Authentication
