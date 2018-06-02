@@ -13,4 +13,4 @@ Add authentication to your users and messages application! You should also have 
 - Make sure that users can not create, edit or delete other users AND that users can not create, edit or delete messages for other users! This will require you to write some custom decorators so you can successfully implement authorization. 
 
 ### Brendon's Notes
-- 
+- The tests expect very specific application functionality including specific routes, database columns, and flash messages 
