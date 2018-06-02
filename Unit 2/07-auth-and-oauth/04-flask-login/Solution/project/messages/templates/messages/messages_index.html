@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>All Messages</h2>
+
+{% for message in messages %}
+  <p>{{ message.content }} – {{ message.user.first_name }} {{ message.user.last_name }}</p>
+  <ul>
+  {% for tag in message.tags %}
+    <li>{{ tag.name }}</li>
+  {% endfor %}
+  </ul>
+{% endfor %}
+
+{% endblock %}
