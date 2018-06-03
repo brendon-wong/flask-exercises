@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="{{ url_for('users.users') }}">User Directory</a>
+
+{% for user in users %}
+  <p>{{ user.first_name }} {{ user.last_name if user.last_name != None }} | ID: {{ user.id }}</p>
+{% endfor %}
+
+{% endblock %}

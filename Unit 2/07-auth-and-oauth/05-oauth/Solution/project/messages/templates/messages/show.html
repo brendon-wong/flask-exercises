@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+<a href="{{ url_for('messages.messages', user_id=user.id) }}">User Messages</a>
+
+<h2>{{ user.first_name }} {{ user.last_name if user.last_name != None }}</h2>
+
+<p>Message ID: {{ message.id }}</p>
+
+<p>{{ message.content }}</p>
+
+{% endblock %}

@@ -1,3 +1,6 @@
+# Alternative to Python interpreter in interactive mode
+IPython
+
 # Install Flask
 Flask
 
@@ -24,6 +27,8 @@ flask-wtf
 flask-bcrypt
 flask-login
 Flask-OAuthlib
+flask-dance[sqla]
+blinker
 
 # Deployment
 gunicorn
