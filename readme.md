@@ -41,13 +41,13 @@ The following setup instructions are for MacOS. For other operating systems see 
 - [08 Testing With Flask](./Unit%201/05-apis-testing-forms-deployment/08-testing)
 - [09 Server Side Validation with WTForms](./Unit%201/05-apis-testing-forms-deployment/09-forms)
 
-### Unit 2 - Flask and Users (Work in progress; directory links/structure needs to be updated; add titles to lesson markdown files)
+### Unit 2 - Flask and Users (Complete)
 
-- [01 Structuring Larger Flask Applications](./Unit-02/01-blueprints/readme.md)
-- [02 Many to Many](./Unit-02/02-many-to-many/readme.md)
-- [03 Hashing and Sessions](./Unit-02/03-hashing-sessions/readme.md)
-- [04 Authentication with Flask Login](./Unit-02/04-flask-login/readme.md)
-- [05 OAuth with Flask](./Unit-02/05-oauth/readme.md)
+- [01 Structuring Larger Flask Applications](./Unit%202/06-larger-applications/01-blueprints)
+- [02 Many to Many](./Unit%202/06-larger-applications/02-many-to-many)
+- [03 Hashing and Sessions](./Unit%202/07-auth-and-oauth/03-hashing-sessions)
+- [04 Authentication with Flask Login](./Unit%202/07-auth-and-oauth/04-flask-login)
+- [05 OAuth with Flask](./Unit%202/07-auth-and-oauth/05-oauth)
 
 ### Tools that helped create Flask Exercises
 - HTML to Markdown converter: https://domchristie.github.io/turndown/
