@@ -14,3 +14,5 @@
 
 2. Add OAuth to your users and messages app! Allow users to log in with their email and password as well as log in through Twitter! 
 
+Brendon's Notes:
+- This article has a good description of OAuth2, including articles and helpful diagrams: https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2
