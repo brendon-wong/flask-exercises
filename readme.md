@@ -41,7 +41,7 @@ The following setup instructions are for MacOS. For other operating systems see 
 - [08 Testing With Flask](./Unit%201/05-apis-testing-forms-deployment/08-testing)
 - [09 Server Side Validation with WTForms](./Unit%201/05-apis-testing-forms-deployment/09-forms)
 
-### Unit 2 - Flask and Users (Complete)
+### Unit 2 - Larger Flask Applications and User Authentication (Complete)
 
 - [01 Structuring Larger Flask Applications](./Unit%202/06-larger-applications/01-blueprints)
 - [02 Many to Many](./Unit%202/06-larger-applications/02-many-to-many)

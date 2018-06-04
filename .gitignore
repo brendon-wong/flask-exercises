@@ -29,19 +29,6 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-### Flask
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-### Database
-*.db
-
-### Migrations
-migrations/
-
 # C extensions
 *.so
 
@@ -92,9 +79,21 @@ coverage.xml
 *.log
 local_settings.py
 
-# Flask stuff:
+### Flask
 instance/
 .webassets-cache
+.pytest_cache
+
+### Migrations
+migrations/
+
+### Database
+*.db
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
 # Scrapy stuff:
 .scrapy
@@ -136,6 +135,3 @@ ENV/
 
 # mypy
 .mypy_cache/
-
-### More Flask
-.pytest_cache
