@@ -4,7 +4,7 @@ import psycopg2.extras
 
 def connect():
     # Set db to flask-sql-snacks for general use, flask-sql-snacks-test for testng
-    conn = psycopg2.connect("dbname=flask-sql-snacks")
+    conn = psycopg2.connect("dbname=flask-sql-snacks-test")
     return conn
 
 
