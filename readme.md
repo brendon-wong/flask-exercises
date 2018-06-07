@@ -1,33 +1,36 @@
 # Flask Exercises
 
-This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's [Flask Fundamentals](https://www.rithmschool.com/courses/flask-fundamentals) course, shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson material has been archived here without modification aside from minor error corrections.
+This repository contains Flask instructional lessons, exercises, and exercise solutions. Lessons and exercises are based off of Rithm's "Flask and SQL Fundamentals" and "Intermediate Flask" [courses](https://www.rithmschool.com/courses), shared under [this CC license](https://creativecommons.org/licenses/by-nc-nd/4.0/). The lesson material has been archived here without modification aside from minor error corrections.
 
-To use this repository, you can look at the lessons on Rithm's website or use the lesson material in each lesson folder. I have included notes for each section in each lesson's readme section under "Brendon's Notes." My solutions to each exercise, which pass all tests, are in solution.py or solution.md depending on the section, and Rithm's solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions). For the Flask sections of the exercises, write your solution in app.py. There are tests in the test.py module which you can refer to while developing to see what the exercise expects.
+To use this repository, you can look at the lessons on Rithm's website or use the lesson.md file in each lesson folder. I have included notes for each section in each lesson's readme file under "Brendon's Notes." My solutions to each exercise, which pass all tests, are in the solutions folder or in solution.md depending on the section, and Rithm's solutions can be found [here](https://github.com/rithmschool/python_curriculum_exercises/tree/solutions). For the Flask sections of the exercises there are tests in the test.py module which you can refer to while developing to see what the exercise expects.
 
 The solutions were created with Flask version 1.0.2, Python version 3.6.5, and PostgreSQL version 10.3 and will likely be forward compatible with future releases.
 
 The following setup instructions are for MacOS. For other operating systems see the Flask documentation on
 [Installation](http://flask.pocoo.org/docs/latest/installation/) and online Postgres resources which provide setup information for other operating systems.
 
-### Setup
+The setup process, which differs from the setup instructions in each lesson, will make it so you do not have to create a new virtual environment to start each lesson or continually install requirements. Instead, these instructions create one virtual environment for the entire course which already has all requirements installed.
+
+### Setup (all commands should be entered in terminal)
 1. `git clone` this repository
-2. `python3 -m venv venv` to create a new virtual environment in the root directory of the cloned folder
+2. `python3 -m venv venv` from the main course folder to create a new virtual environment in the main course folder
 3. `. venv/bin/activate` to enter the virtual environment (`deactivate` to exit)
 4. `pip install -r requirements.txt` to install/update all requirements
 
-### Start Exercises
-1. `. venv/bin/activate` if the virtual environment is not activated
-2. Complete an exercise, referring to the lesson content, tests, and, if necessary, solution.py
-3. `python3 test.py` to run tests of your solution in app.py; to see more details about the tests, use the command `python3 test.py -v`
-4. To test solution.py, change the import statement at the top of test.py from `from app import app` to `from solution import app`, make additional import changes if needed, then run `python3 solution.py`
+### Start Exercises (all commands should be entered in terminal)
+1. `. venv/bin/activate` from the main course folder if the virtual environment is not activated
+2. Complete an exercise, referring to the lesson content, tests, and, if necessary, the solutions
+3. `python3 test.py` to run tests of your solution 
+    - If you create your solution in a new folder or file, you will need to adjust the import statements of the test to import your solution correctly)
+    - To see more details about the tests, use the command `python3 test.py -v`
+4. To test the solutions, run the file solution_test.py inside the solutions folder; solution_test.py is identical to the main tests aside from adjusted import statements
 5. Refer to the solution to see alternative ways of solving the same problem and improve your coding skills
 
 ### Postgres Setup
-- Install [Homebrew](https://brew.sh) if Homebrew is not already installed
-- `brew install postgres` to install Postgres
-- `brew services start postgresql` to start Postgres
-- `brew services stop postgresql` to stop Postgres
-- `psql database_name` to connect to a database
+0. Install [Homebrew](https://brew.sh) if Homebrew is not already installed
+1. `brew install postgres` to install Postgres
+2. `brew services start postgresql` to start Postgres (`brew services stop postgresql` to stop Postgres)
+3. `psql database_name` to connect to a database 
 
 ### Unit 1 - Flask Fundamentals and Relational Databases (Complete)
 
